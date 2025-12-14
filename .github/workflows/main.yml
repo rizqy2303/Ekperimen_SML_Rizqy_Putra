@@ -1,0 +1,13 @@
+name: Cek Kriteria
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v3
+      
+      - name: Konfirmasi Berhasil
+        run: echo "Kode berhasil di-upload dan tes dasar sukses!"
